@@ -1,0 +1,57 @@
+.taskList {
+    list-style: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.task {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    box-sizing: border-box;
+    width: 100%;
+    margin-bottom: 10px;
+
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.task p {
+    margin: 0px;
+}
+
+.task > div {
+    display: flex;
+    flex-direction: column;
+}
+.taskButton {
+    padding-left: 15px;
+}
+
+.taskButton > button:first-child {
+    margin-bottom: 5px;
+}
+
+.taskTitle {
+    font-weight: bold;
+}
+
+
+.urgent .taskTitle::after {
+    content: '(Urgent)';
+    margin-left: 5px;
+    color: crimson;
+}
+
+.finish {
+    background: repeating-linear-gradient(
+        45deg,
+        #EAEAEA,
+        #EAEAEA 10px,
+        #FEFEFE 10px,
+        #FEFEFE 20px
+    );
+}
